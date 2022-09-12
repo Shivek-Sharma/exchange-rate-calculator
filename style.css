@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #5fbaa7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.money-image {
+    width: 150px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+.currency {
+    margin: 20px 0;
+}
+
+.currency select {
+    padding: 5px 12px;
+    border: 1px solid #dedede;
+    font-size: 20px;
+}
+
+.currency input {
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font: 14px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+}
